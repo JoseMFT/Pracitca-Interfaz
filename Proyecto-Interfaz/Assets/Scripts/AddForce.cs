@@ -13,7 +13,8 @@ public class AddForce: MonoBehaviour {
         body.AddForce (fuerza, ForceMode.Impulse);
     }
 
-    /*public void AddForces (Vector3 parametro) {
-        body.AddForce (parametro, ForceMode.Impulse);
-    }*/
+    void Update () {
+        if (Input.GetKey ("space"))
+            body.AddForce (fuerza * Time.deltaTime, ForceMode.Impulse);
+    }
 }
