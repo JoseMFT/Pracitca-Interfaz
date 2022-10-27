@@ -23,6 +23,46 @@ MonoBehaviour:
     m_Key: idioma
     m_Metadata:
       m_Items: []
+  - m_Id: 208098971099136
+    m_Key: EjemploAnimaciones/CanvasAjustes/Image/Flechas/Button (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208109364584448
+    m_Key: EjemploAnimaciones/CanvasAjustes/Image/Flechas/Button (1) 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208777932447744
+    m_Key: EjemploAnimaciones/CanvasAjustes/Image/Flechas/Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208939790639104
+    m_Key: EjemploAnimaciones/CanvasAjustes/Image/Flechas/Button 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209394969092096
+    m_Key: EjemploAnimaciones/CanvasAjustes/Image/Flechas/Button 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209412278984704
+    m_Key: EjemploAnimaciones/CanvasAjustes/Image/Flechas/Button 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209529409118208
+    m_Key: EjemploAnimaciones/CanvasAjustes/Image/Flechas/Button (1) 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209541539045376
+    m_Key: EjemploAnimaciones/CanvasAjustes/Image/Flechas/Button (1) 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209630206631936
+    m_Key: EjemploAnimaciones/CanvasAjustes/Image/Flechas/Button 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209653585682432
+    m_Key: EjemploAnimaciones/CanvasAjustes/Image/Flechas/Button 5
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 7969840340345290782

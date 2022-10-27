@@ -975,7 +975,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 294267903}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1247128475}
+        m_TargetAssemblyTypeName: OpeningMenu, Assembly-CSharp
+        m_MethodName: Finish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &294267903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2244,6 +2256,8 @@ GameObject:
   - component: {fileID: 530251400}
   - component: {fileID: 530251403}
   - component: {fileID: 530251404}
+  - component: {fileID: 530251406}
+  - component: {fileID: 530251405}
   m_Layer: 5
   m_Name: Cross
   m_TagString: Untagged
@@ -2260,7 +2274,7 @@ RectTransform:
   m_GameObject: {fileID: 530251398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2125, y: 1, z: 1}
+  m_LocalScale: {x: 0.21, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 927841024}
@@ -2377,7 +2391,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 530251405}
+          m_TargetAssemblyTypeName: ButtonScaler, Assembly-CSharp
+          m_MethodName: CrossScaleUp
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 530251405}
+          m_TargetAssemblyTypeName: ButtonScaler, Assembly-CSharp
+          m_MethodName: CrossScaleDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &530251404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2392,6 +2438,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasMenu: {fileID: 927841019}
   canvasInicio: {fileID: 1247128470}
+--- !u!114 &530251405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530251398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf0bcdba3fd1f1449d9f5c52c937b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &530251406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530251398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0433eb8b8d03dbc43bbb8536829b377a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &532423022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5011,6 +5081,7 @@ GameObject:
   - component: {fileID: 1167558113}
   - component: {fileID: 1167558112}
   - component: {fileID: 1167558111}
+  - component: {fileID: 1167558116}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5066,35 +5137,11 @@ MonoBehaviour:
   - eventID: 0
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1167558111}
-          m_TargetAssemblyTypeName: PointerScaler, Assembly-CSharp
-          m_MethodName: MoveLeft
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   - eventID: 1
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1167558111}
-          m_TargetAssemblyTypeName: PointerScaler, Assembly-CSharp
-          m_MethodName: MoveBackLeft
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!114 &1167558113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5138,7 +5185,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1167558114}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1167558116}
+        m_TargetAssemblyTypeName: ButtonScaler, Assembly-CSharp
+        m_MethodName: ScaleUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1167558114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5177,6 +5236,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167558109}
   m_CullTransparentMesh: 1
+--- !u!114 &1167558116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167558109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf0bcdba3fd1f1449d9f5c52c937b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1193118203 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52cbed931224235409629bd6e1e4ee6a, type: 3}
@@ -5377,6 +5448,7 @@ GameObject:
   - component: {fileID: 1247128473}
   - component: {fileID: 1247128472}
   - component: {fileID: 1247128471}
+  - component: {fileID: 1247128475}
   m_Layer: 5
   m_Name: CanvasInicio
   m_TagString: Untagged
@@ -5468,6 +5540,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1247128475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247128470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9841232bfbe06740bdb56217957a4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Logo: {fileID: 1914635141}
+  ButtonPlay: {fileID: 1499697975}
+  ButtonSettings: {fileID: 2011632042}
+  ButtonExit: {fileID: 294267900}
 --- !u!1 &1249323556
 GameObject:
   m_ObjectHideFlags: 0
@@ -9874,6 +9962,7 @@ GameObject:
   - component: {fileID: 2080953989}
   - component: {fileID: 2080953988}
   - component: {fileID: 2080953987}
+  - component: {fileID: 2080953992}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -9929,35 +10018,11 @@ MonoBehaviour:
   - eventID: 0
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2080953987}
-          m_TargetAssemblyTypeName: PointerScaler, Assembly-CSharp
-          m_MethodName: MoveRight
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   - eventID: 1
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2080953987}
-          m_TargetAssemblyTypeName: PointerScaler, Assembly-CSharp
-          m_MethodName: MoveBackRight
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!114 &2080953989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10040,6 +10105,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080953985}
   m_CullTransparentMesh: 1
+--- !u!114 &2080953992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080953985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf0bcdba3fd1f1449d9f5c52c937b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2087883963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bc4975fcab23a964482d7c7cfc6c2e0a, type: 3}

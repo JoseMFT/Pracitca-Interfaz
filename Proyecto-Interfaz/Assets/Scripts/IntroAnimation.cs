@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class IntroAnimation: MonoBehaviour {
+
     [SerializeField]
     GameObject Logo;
     [SerializeField]
     GameObject Menu;
+
     void Start () {
         LeanTween.moveLocalY (Logo, -750f, 0.0f);
         LeanTween.moveLocal (Logo, new Vector3 (20f, 21, 0f), 1.5f).setEaseOutCubic ().setOnComplete (Scale);
