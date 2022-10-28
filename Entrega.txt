@@ -1,2 +1,6 @@
 Enlace al repositorio:
 https://github.com/JoseMFT/Practica-Interfaz/tree/Entrega
+
+El juego tiene un bug que no supimos resolver en clase, por lo que a la hora de compilarlo
+no funciona correctamente: los botones de play, settings y exit desapareceren según comienza
+la escena.
